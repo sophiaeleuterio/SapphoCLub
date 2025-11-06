@@ -1,0 +1,236 @@
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--color-bg-light);
+}
+
+.login-container {
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo-link {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.logo-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.login-header h2 {
+  color: var(--color-text-dark);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-header p {
+  color: var(--color-text-medium);
+  font-size: 1rem;
+}
+
+.login-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: var(--color-text-dark);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.form-group input.error {
+  border-color: var(--color-highlight);
+}
+
+.error-message {
+  display: block;
+  color: var(--color-highlight);
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-medium);
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  cursor: pointer;
+}
+
+.forgot-password {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.btn-login {
+  width: 100%;
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.social-login {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.social-login p {
+  color: var(--color-text-medium);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-social {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 2px solid var(--color-border);
+  background: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-size: 0.95rem;
+}
+
+.btn-social:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.login-footer p {
+  color: var(--color-text-medium);
+}
+
+.signup-link {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+.login-visual {
+  display: none;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .login-page {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .login-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    padding: 3rem;
+  }
+
+  .visual-content {
+    color: white;
+    max-width: 500px;
+  }
+
+  .visual-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .benefits-list li {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+    line-height: 1.6;
+  }
+}

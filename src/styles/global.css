@@ -1,0 +1,64 @@
+:root {
+  /* Paleta SapphoClub */
+  --color-primary: #C73402; /* Vermelho queimado */
+  --color-secondary: #F68F4C; /* Laranja pêssego */
+  --color-white: #FFFFFF;
+  --color-accent: #D461A6; /* Rosa médio */
+  --color-highlight: #A50062; /* Rosa-choque */
+  
+  /* Gradientes */
+  --gradient-primary: linear-gradient(135deg, #C73402 0%, #A50062 100%);
+  --gradient-secondary: linear-gradient(135deg, #F68F4C 0%, #D461A6 100%);
+  --gradient-accent: linear-gradient(90deg, #D461A6, #F68F4C);
+  
+  /* Tons para UI */
+  --color-bg-light: #FFF5F5;
+  --color-bg-medium: #F8F9FA;
+  --color-text-dark: #2c3e50;
+  --color-text-medium: #5a6c7d;
+  --color-border: #e0e0e0;
+  
+  /* Sombras */
+  --shadow-sm: 0 2px 4px rgba(199, 52, 2, 0.1);
+  --shadow-md: 0 4px 12px rgba(199, 52, 2, 0.15);
+  --shadow-lg: 0 8px 20px rgba(199, 52, 2, 0.2);
+  
+  /* Transições */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-white);
+  color: var(--color-text-dark);
+  line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
